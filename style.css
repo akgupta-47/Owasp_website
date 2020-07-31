@@ -1,0 +1,394 @@
+@font-face{
+  src: url('./fonts/flaticon/font/Flaticon.woff');
+  font-family: cool;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  margin-top: 3em;
+  padding: 0;
+  min-height: 100vh;
+  align-items: center;
+  font-family: cool;
+}
+.team{
+  font-size: 42px;
+}
+.team h2{
+  text-align: center;
+}
+.team .content{
+  font-size: 15px;
+  margin-left: 10%;
+}
+.container-team{
+  width: 80%;
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+}
+.container-team .card{
+  position: relative;
+  width: 70%;
+  height: 200px;
+  margin: 10px 20px;
+  flex: 25%;
+}
+
+.container-team .card .facee{
+  transition: all 0.5s;
+}
+.container-team .card .facee.face1{
+  position: relative;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(120px);
+  z-index: 1;
+}
+
+.container-team .card:hover .facee.face1{
+ transform: translateY(0);
+}
+
+.container-team .card .facee.face1 .content{
+  opacity: 0.4;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.container-team .card:hover .facee.face1 .content{
+  opacity: 1;
+}
+
+.container-team .card .facee.face1 .content h3{
+  margin : 7px 0 7px;
+  padding: 0;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.container-team .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px 20px rgba(0,0,0,0.4);
+  transform: translateY(-120px);
+}
+
+.container-team .card:hover .facee.face2{
+  transform: translateY(0);
+}
+
+.container-team .card .facee.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+.container-team .card .facee.face2 .content a{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+.container-team .card .facee.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+.container-team-2{
+  width: 80%;
+  display: flex;
+  margin: 220px 10%;
+  justify-content: center;
+}
+.container-team-2 .card{
+  position: relative;
+  width: 22%;
+  height: 200px;
+  margin: 10px 20px;
+}
+
+.container-team-2 .card .facee{
+  transition: all 0.5s;
+}
+.container-team-2 .card .facee.face1{
+  position: relative;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(120px);
+  z-index: 1;
+}
+
+.container-team-2 .card:hover .facee.face1{
+ transform: translateY(0);
+}
+
+.container-team-2 .card .facee.face1 .content{
+  opacity: 0.2;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.container-team-2 .card:hover .facee.face1 .content{
+  opacity: 1;
+}
+
+.container-team-2 .card .facee.face1 .content h3{
+  margin : 7px 0 7px;
+  padding: 0;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.container-team-2 .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+  transform: translateY(-120px);
+}
+
+.container-team-2 .card:hover .facee.face2{
+  transform: translateY(0);
+}
+
+.container-team-2 .card .facee.face2 .content p{
+  margin: 0;
+  padding: 0;
+}
+.container-team-2 .card .facee.face2 .content a{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border: 1px black solid;
+}
+
+.container-team-2 .card .facee.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
+.core-team{
+  font-size: 15px;
+  margin: 20em 10% 0px;
+}
+.core-team-container{
+  width: 80%;
+  display: flex;
+  margin: 0 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.core-team-container .card{
+  position: relative;
+  height: 300px;
+  margin: 10px 20px;
+  flex: .5;
+}
+.core-team-container .card .facee{
+  position: relative;
+  transition: all 0.5s;
+}
+.core-team-container .card .facee.face1{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+.core-team-container .card .facee.face1 .social{
+  background-color: blue;
+  position: absolute;
+  height: 240px;
+  transition: all 0.3s;
+  transform: translateX(-80px) translateY(-15px);
+}
+
+.core-team-container .card .facee.face1:hover .social{
+  transform: translateX(-40px) translateY(-15px);
+}
+
+.core-team-container .card .facee.face1 ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.core-team-container .card .facee.face1 ul a{
+  color: #fff;
+}
+.core-team-container .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+.core-team-container-1{
+  width: 80%;
+  display: flex;
+  margin: 8em 10% 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.core-team-container-1 .card{
+  position: relative;
+  height: 300px;
+  margin: 10px 20px;
+  flex: .5;
+}
+.core-team-container-1 .card .facee{
+  position: relative;
+  transition: all 0.5s;
+}
+.core-team-container-1 .card .facee.face1{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+.core-team-container-1 .card .facee.face1 .social{
+  background-color: blue;
+  position: absolute;
+  height: 240px;
+  transition: all 0.3s;
+  transform: translateX(-80px) translateY(-15px);
+}
+
+.core-team-container-1 .card .facee.face1:hover .social{
+  transform: translateX(-40px) translateY(-15px);
+}
+
+.core-team-container-1 .card .facee.face1 ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.core-team-container-1 .card .facee.face1 ul a{
+  color: #fff;
+}
+.core-team-container-1 .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+.core-team-container-2{
+  width: 80%;
+  display: flex;
+  margin: 8em 10% 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.core-team-container-2 .card{
+  position: relative;
+  height: 300px;
+  margin: 10px 20px;
+  flex: .5;
+}
+.core-team-container-2 .card .facee{
+  position: relative;
+  transition: all 0.5s;
+}
+.core-team-container-2 .card .facee.face1{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+.core-team-container-2 .card .facee.face1 .social{
+  background-color: blue;
+  position: absolute;
+  height: 240px;
+  transition: all 0.3s;
+  transform: translateX(-80px) translateY(-15px);
+}
+
+.core-team-container-2 .card .facee.face1:hover .social{
+  transform: translateX(-40px) translateY(-15px);
+}
+
+.core-team-container-2 .card .facee.face1 ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.core-team-container-2 .card .facee.face1 ul a{
+  color: #fff;
+}
+.core-team-container-2 .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+.core-team-container-3{
+  width: 80%;
+  display: flex;
+  margin: 8em 10% 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.core-team-container-3 .card{
+  position: relative;
+  height: 300px;
+  margin: 10px 20px;
+  flex: .5;
+}
+.core-team-container-3 .card .facee{
+  position: relative;
+  transition: all 0.5s;
+}
+.core-team-container-3 .card .facee.face1{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+.core-team-container-3 .card .facee.face1 .social{
+  background-color: blue;
+  position: absolute;
+  height: 240px;
+  transition: all 0.3s;
+  transform: translateX(-80px) translateY(-15px);
+}
+
+.core-team-container-3 .card .facee.face1:hover .social{
+  transform: translateX(-40px) translateY(-15px);
+}
+
+.core-team-container-3 .card .facee.face1 ul li{
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.core-team-container-3 .card .facee.face1 ul a{
+  color: #fff;
+}
+.core-team-container-3 .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
