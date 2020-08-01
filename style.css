@@ -103,7 +103,7 @@ body{
   display: inline-block;
 }
 .container-pre .card .facee.face2 .content .social li a{
-  margin:0 0.9em 0;
+  margin:0 1.3em 0;
   display: inline-block;
   text-decoration: none;
   color: #333;
@@ -516,11 +516,16 @@ body{
   height: 300px;
   margin: 10px 20px;
   flex: 1;
+  transition: all 0.5s;
 }
 
 .container-members .card .facee{
   position: relative;
   transition: all 0.5s;
+}
+
+.container-members .card:hover{
+  transform: scale(1.1);
 }
 
 .container-members .card .facee.face1{
@@ -576,12 +581,16 @@ body{
   position: relative;
   height: 300px;
   margin: 10px 20px;
+  transition: all 0.5s;
   flex: 1;
 }
 
 .container-members-1 .card .facee{
   position: relative;
   transition: all 0.5s;
+}
+.container-members-1 .card:hover{
+  transform: scale(1.1);
 }
 
 .container-members-1 .card .facee.face1{
@@ -637,7 +646,11 @@ body{
   position: relative;
   height: 300px;
   margin: 10px 20px;
+  transition: all 0.5s;
   flex: 1;
+}
+.container-members-2 .card:hover{
+  transform: scale(1.1);
 }
 
 .container-members-2 .card .facee{
@@ -698,7 +711,11 @@ body{
   position: relative;
   height: 300px;
   margin: 10px 20px;
+  transition: all 0.5s;
   flex: 1;
+}
+.container-members-3 .card:hover{
+  transform: scale(1.1);
 }
 
 .container-members-3 .card .facee{
@@ -758,8 +775,13 @@ body{
   position: relative;
   height: 300px;
   margin: 10px 20px;
+  transition: all 0.5s;
   flex: 1;
 }
+.container-members-4 .card:hover{
+  transform: scale(1.1);
+}
+
 
 .container-members-4 .card .facee{
   position: relative;
@@ -820,6 +842,11 @@ body{
   height: 300px;
   margin: 10px 20px;
   flex: 1;
+  transition: all 0.5s;
+}
+
+.container-members-5 .card:hover{
+  transform: scale(1.1);
 }
 
 .container-members-5 .card .facee{
