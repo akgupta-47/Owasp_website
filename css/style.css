@@ -105,6 +105,7 @@ body:after {
 .btn.btn-primary:hover {
   background: #000;
   border-color: #000;
+  /*border-color: rgba(101, 98, 98, 0.431);*/
   color: #fff;
 }
 .btn.btn-primary.btn-black--hover:hover {
