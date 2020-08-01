@@ -56,7 +56,7 @@ body{
 
 .container-team .card .facee.face1 .content{
   opacity: 0.4;
-  background-color: red;
+  background-color: blue;
   transition: 0.5s;
 }
 
@@ -67,7 +67,7 @@ body{
 .container-team .card .facee.face1 .content h3{
   margin : 7px 0 7px;
   padding: 0;
-  background-color: red;
+  background-color: blue;
   color: #fff;
   text-align: center;
   font-size: 1.5em;
@@ -92,17 +92,23 @@ body{
 .container-team .card .facee.face2 .content p{
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-.container-team .card .facee.face2 .content a{
-  margin: 15px 0 0;
+.container-team .card .facee.face2 .content .social li{
+  list-style: none;
+  display: inline-block;
+}
+.container-team .card .facee.face2 .content .social li a{
+  margin:0 0.9em 0;
   display: inline-block;
   text-decoration: none;
   color: #333;
   padding: 5px;
   border: 1px black solid;
+  border-radius: 2em;
 }
 
-.container-team .card .facee.face2 .content a:hover{
+.container-team .card .facee.face2 .content .social li a:hover{
   background: #333;
   color: #fff;
 }
@@ -138,7 +144,7 @@ body{
 
 .container-team-2 .card .facee.face1 .content{
   opacity: 0.2;
-  background-color: red;
+  background-color: blue;
   transition: 0.5s;
 }
 
@@ -149,7 +155,7 @@ body{
 .container-team-2 .card .facee.face1 .content h3{
   margin : 7px 0 7px;
   padding: 0;
-  background-color: red;
+  background-color: blue;
   color: #fff;
   text-align: center;
   font-size: 1.5em;
@@ -174,17 +180,23 @@ body{
 .container-team-2 .card .facee.face2 .content p{
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-.container-team-2 .card .facee.face2 .content a{
-  margin: 15px 0 0;
+.container-team-2 .card .facee.face2 .content .social li{
+  list-style: none;
+  display: inline-block;
+}
+.container-team-2 .card .facee.face2 .content .social li a{
+  margin:0 0.9em 0;
   display: inline-block;
   text-decoration: none;
   color: #333;
   padding: 5px;
   border: 1px black solid;
+  border-radius: 2em;
 }
 
-.container-team-2 .card .facee.face2 .content a:hover{
+.container-team-2 .card .facee.face2 .content .social li a:hover{
   background: #333;
   color: #fff;
 }
@@ -352,7 +364,7 @@ body{
 .core-team-container-3 .card{
   position: relative;
   height: 300px;
-  margin: 10px 20px;
+  margin: 10px 59px;
   flex: .5;
 }
 .core-team-container-3 .card .facee{
@@ -392,3 +404,9 @@ body{
   box-sizing: border-box;
   box-shadow: 0 20px 30px rgba(0,0,0,0.4);
 }
+
+.members-heading{
+  font-size: 15px;
+  margin: 8em 10%;
+}
+
