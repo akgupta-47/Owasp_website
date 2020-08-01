@@ -1,0 +1,57 @@
+.container-members-5{
+  width: 80%;
+  display: flex;
+  margin: 8em 10% 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-members-5 .card{
+  position: relative;
+  height: 300px;
+  margin: 10px 20px;
+  flex: 1;
+}
+
+.container-members-5 .card .facee{
+  position: relative;
+  transition: all 0.5s;
+}
+
+.container-members-5 .card .facee.face1{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container-members-5 .card .facee.face2{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+
+.container-members-5 .card .facee.face2 .name{
+  margin: 1em 0;
+}
+
+.container-members-5 .card .facee.face2 .social li{
+  list-style: none;
+  display: inline-block;
+}
+.container-members-5 .card .facee.face2 .social li a{
+  margin:0 0.9em 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border: 1px black solid;
+  border-radius: 2em;
+}
+
+.container-members-5 .card .facee.face2 .social li a:hover{
+  background: #333;
+  color: #fff;
+}
