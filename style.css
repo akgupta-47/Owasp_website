@@ -295,10 +295,9 @@ nav {
 }
 .container-team .card{
   position: relative;
-  width: 70%;
   height: 200px;
-  margin: 10rem 20px;
-  flex: .5;
+  margin: 7rem 20px;
+  flex: .25;
 }
 
 .container-team .card .facee{
