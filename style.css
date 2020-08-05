@@ -90,9 +90,10 @@ nav {
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 858px) {
   nav {
     position: fixed;
+    width: 100%;
     z-index: 3;
   }
   .logo img {
@@ -296,7 +297,7 @@ nav {
 .container-team .card{
   position: relative;
   height: 200px;
-  margin: 7rem 20px;
+  margin:0 20px 14rem 20px;
   flex: .25;
 }
 
@@ -1115,13 +1116,34 @@ nav {
     position: relative;
     width: 30%;
     height: 100px;
-    margin: 10rem 20px;
+    margin:2rem 20px 20rem 20px;
     flex: .33;
   }
   .container-team .card .facee.face1{
     transform: translateY(110px);
-    /* height: 80px; */
     z-index: 1;
-  }
+  } 
 
+}
+
+@media screen and (max-width: 858px) {
+  .container-team .card{
+    position: relative;
+    height: 100px;
+    margin:2rem 20px 20rem 20px;
+    flex: .5;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-team{
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container-team .card{
+    position: relative;
+    height: 200px;
+    flex: .5;
+  }
 }
