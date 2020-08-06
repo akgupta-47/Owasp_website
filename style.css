@@ -288,7 +288,7 @@ nav {
   color: #fff;
 }
 .container-team{
-  max-width: 80%;
+  min-width: 80%;
   display: flex;
   margin: 0 10%;
   flex-wrap: wrap;
@@ -298,6 +298,7 @@ nav {
   position: relative;
   height: 200px;
   margin:0 20px 14rem 20px;
+  flex-grow: 1;
   flex: .25;
 }
 
@@ -383,115 +384,23 @@ nav {
   background: #333;
   color: #fff;
 }
-.container-team-2{
-  max-width: 80%;
-  display: flex;
-  margin: 220px 10%;
-  justify-content: center;
-}
-.container-team-2 .card{
-  position: relative;
-  width: 22%;
-  height: 200px;
-  margin: 10px 20px;
-}
 
-.container-team-2 .card .facee{
-  transition: all 0.5s;
-}
-.container-team-2 .card .facee.face1{
-  position: relative;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(120px);
-  z-index: 1;
-}
-
-.container-team-2 .card:hover .facee.face1{
- transform: translateY(0);
-}
-
-.container-team-2 .card .facee.face1 .content{
-  opacity: 0.2;
-  background-color: blue;
-  transition: 0.5s;
-}
-
-.container-team-2 .card:hover .facee.face1 .content{
-  opacity: 1;
-}
-
-.container-team-2 .card .facee.face1 .content h3{
-  margin : 7px 0 7px;
-  padding: 0;
-  background-color: blue;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-.container-team-2 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-  transform: translateY(-120px);
-}
-
-.container-team-2 .card:hover .facee.face2{
-  transform: translateY(0);
-}
-
-.container-team-2 .card .facee.face2 .content p{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container-team-2 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container-team-2 .card .facee.face2 .content .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-team-2 .card .facee.face2 .content .social li a{
-  margin:0.5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-team-2 .card .facee.face2 .content .social li a:hover{
-  background: #333;
-  color: #fff;
-}
 .core-team{
   font-size: 20px;
   margin: 20em 10% 0px;
 }
 .core-team-container{
-  max-width: 80%;
-  display: flex;
+  min-width: 80%;
   margin: 0 10%;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .core-team-container .card{
   position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  flex: .5;
+  height: 200px;
+  margin:5rem 20px;
+  flex: .33 0 200px;
 }
 .core-team-container .card .facee{
   position: relative;
@@ -506,7 +415,7 @@ nav {
 .core-team-container .card .facee.face1 .social{
   background-color: blue;
   position: absolute;
-  height: 240px;
+  height: 340px;
   transition: all 0.3s;
   transform: translateX(-80px) translateY(-15px);
 }
@@ -530,156 +439,6 @@ nav {
   box-sizing: border-box;
   box-shadow: 0 20px 30px rgba(0,0,0,0.4);
 }
-.core-team-container-1{
-  width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.core-team-container-1 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  flex: .5;
-}
-.core-team-container-1 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-.core-team-container-1 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-.core-team-container-1 .card .facee.face1 .social{
-  background-color: blue;
-  position: absolute;
-  height: 240px;
-  transition: all 0.3s;
-  transform: translateX(-80px) translateY(-15px);
-}
-
-.core-team-container-1 .card .facee.face1:hover .social{
-  transform: translateX(0px) translateY(0px);
-}
-
-.core-team-container-1 .card .facee.face1 ul li{
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-.core-team-container-1 .card .facee.face1 ul a{
-  color: #fff;
-}
-.core-team-container-1 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-.core-team-container-2{
-  max-width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.core-team-container-2 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  flex: .5;
-}
-.core-team-container-2 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-.core-team-container-2 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-.core-team-container-2 .card .facee.face1 .social{
-  background-color: blue;
-  position: absolute;
-  height: 240px;
-  transition: all 0.3s;
-  transform: translateX(-80px) translateY(-15px);
-}
-
-.core-team-container-2 .card .facee.face1:hover .social{
-  transform: translateX(0) translateY(0);
-}
-
-.core-team-container-2 .card .facee.face1 ul li{
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-.core-team-container-2 .card .facee.face1 ul a{
-  color: #fff;
-}
-.core-team-container-2 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-.core-team-container-3{
-  width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.core-team-container-3 .card{
-  position: relative;
-  height: 290px;
-  margin: 10px 59px;
-  flex: .5;
-}
-.core-team-container-3 .card .facee{
-  position: relative;
-  transition: all 1s;
-}
-.core-team-container-3 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-.core-team-container-3 .card .facee.face1 .social{
-  background-color: blue;
-  position: absolute;
-  height: 240px;
-  transition: all 0.4s;
-  transform: translateX(-80px) translateY(-15px);
-}
-
-.core-team-container-3 .card .facee.face1:hover .social{
-  transform: translateX(0) translateY(0);
-}
-
-.core-team-container-3 .card .facee.face1 ul li{
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-}
-.core-team-container-3 .card .facee.face1 ul a{
-  color: #fff;
-}
-.core-team-container-3 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
 
 .members-heading{
   font-size: 20px;
@@ -690,14 +449,15 @@ nav {
   max-width: 80%;
   display: flex;
   margin: 4em 10% 0;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .container-members .card{
   position: relative;
   height: 300px;
-  margin: 10px 20px;
-  flex: 0.5;
+  margin:0 20px 10rem 20px;
+  flex: 0.5 0 200px;
   transition: all 0.5s;
 }
 
@@ -757,360 +517,6 @@ nav {
   background: #333;
   color: #fff;
 }
-.container-members-1{
-  max-width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container-members-1 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  transition: all 0.5s;
-  flex: 0.5;
-}
-
-.container-members-1 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-.container-members-1 .card:hover{
-  transform: scale(1.1);
-}
-
-.container-members-1 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.container-members-1 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-
-.container-members-1 .card .facee.face2 .name{
-  margin: 1em 0;
-  text-align: center;
-}
-.container-members-1 .card .facee.face2 .member{
-  text-align: center;
-}
-
-.container-members-1 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container-members-1 .card .facee.face2 .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-members-1 .card .facee.face2 .social li a{
-  margin:0.5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-members-1 .card .facee.face2 .social li a:hover{
-  background: #333;
-  color: #fff;
-}
-.container-members-2{
- max-width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container-members-2 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  transition: all 0.5s;
-  flex: 0.5;
-}
-.container-members-2 .card:hover{
-  transform: scale(1.1);
-}
-
-.container-members-2 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-
-.container-members-2 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.container-members-2 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-
-.container-members-2 .card .facee.face2 .name{
-  margin: 1em 0;
-  text-align: center;
-}
-.container-members-2 .card .facee.face2 .member{
-  text-align: center;
-}
-
-.container-members-2 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container-members-2 .card .facee.face2 .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-members-2 .card .facee.face2 .social li a{
-  margin:0.5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-members-2 .card .facee.face2 .social li a:hover{
-  background: #333;
-  color: #fff;
-}
-.container-members-3{
-  max-width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container-members-3 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  transition: all 0.5s;
-  flex: 0.5;
-}
-.container-members-3 .card:hover{
-  transform: scale(1.1);
-}
-
-.container-members-3 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-
-.container-members-3 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.container-members-3 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-
-.container-members-3 .card .facee.face2 .name{
-  margin: 1em 0;
-  text-align: center;
-}
-.container-members-3 .card .facee.face2 .member{
-  text-align: center;
-}
-.container-members-3 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-.container-members-3 .card .facee.face2 .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-members-3 .card .facee.face2 .social li a{
-  margin:0.5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-members-3 .card .facee.face2 .social li a:hover{
-  background: #333;
-  color: #fff;
-}
-.container-members-4{
-  max-width: 80%;
-  display: flex;
-  margin: 8em 10% 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container-members-4 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  transition: all 0.5s;
-  flex: 0.5;
-}
-.container-members-4 .card:hover{
-  transform: scale(1.1);
-}
-
-
-.container-members-4 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-
-.container-members-4 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.container-members-4 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-
-.container-members-4 .card .facee.face2 .name{
-  margin: 1em 0;
-  text-align: center;
-}
-.container-members-4 .card .facee.face2 .member{
-  text-align: center;
-}
-
-.container-members-4 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-
-.container-members-4 .card .facee.face2 .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-members-4 .card .facee.face2 .social li a{
-  margin: .5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-members-4 .card .facee.face2 .social li a:hover{
-  background: #333;
-  color: #fff;
-}
-.container-members-5{
-  max-width: 80%;
-  display: flex;
-  margin: 8em 10% 4em;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container-members-5 .card{
-  position: relative;
-  height: 300px;
-  margin: 10px 20px;
-  flex: .5;
-  transition: all 0.5s;
-}
-
-.container-members-5 .card:hover{
-  transform: scale(1.1);
-}
-
-.container-members-5 .card .facee{
-  position: relative;
-  transition: all 0.5s;
-}
-
-.container-members-5 .card .facee.face1{
-  position: relative;
-  display: flex;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.container-members-5 .card .facee.face2{
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-}
-
-.container-members-5 .card .facee.face2 .name{
-  margin: 1em 0;
-  text-align: center;
-}
-.container-members-5 .card .facee.face2 .member{
-  text-align: center;
-}
-.container-members-5 .card .facee.face2 .social{
-  margin:1rem 1.9rem 0;
-  display: flex;
-  justify-content: center;
-}
-.container-members-5 .card .facee.face2 .social li{
-  list-style: none;
-  display: inline-block;
-}
-.container-members-5 .card .facee.face2 .social li a{
-  margin: 0.5rem;
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  border: 1px black solid;
-  border-radius: 2em;
-}
-
-.container-members-5 .card .facee.face2 .social li a:hover{
-  background: #333;
-  color: #fff;
-}
-
 @media screen and (max-width: 1163px){
   .container-team .card{
     position: relative;
@@ -1124,6 +530,35 @@ nav {
     z-index: 1;
   } 
 
+  .container-pre{
+    width: 80%;
+    display: flex;
+    margin: 0 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-pre .card{
+    position: relative;
+    height: 200px;
+    margin: 2rem 10rem 5rem;
+    flex: .5 0 200px;
+  }
+
+  .container-members{
+    max-width: 80%;
+    display: flex;
+    margin: 4em 10% 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container-members .card{
+    position: relative;
+    height: 300px;
+    /* margin:0 20px 10rem 20px; */
+    flex: 0.5 0 200px;
+  }
+
 }
 
 @media screen and (max-width: 858px) {
@@ -1134,16 +569,59 @@ nav {
     flex: .5;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
+  .team{
+    text-align: center;
+  }
+  .team .content{
+    margin-top: 20px;
+    text-align: center;
+  }
   .container-team{
-    max-width: 80%;
+    max-width: 400px;
     display: flex;
+    margin-left: 50px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .container-team .card{
     position: relative;
     height: 200px;
-    flex: .5;
+    flex: 1 0 200px;
+  }
+  .container-pre{
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-pre .card{
+    position: relative;
+    height: 200px;
+    flex: 1 0 200px;
+  }
+  .core-team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .core-team-container .card{
+    position: relative;
+    height: 200px;
+    /* margin:5rem 20px; */
+    margin: 70px 10px;
+    flex: .5 0 100px;
+  }
+  .container-members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container-members .card{
+    position: relative;
+    height: 300px;
+    margin: 70px 10px;
+    flex: .33 0 100px;
   }
 }
