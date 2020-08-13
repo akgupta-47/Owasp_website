@@ -399,7 +399,7 @@ nav {
 .core-team-container .card{
   position: relative;
   height: 200px;
-  margin:5rem 20px;
+  margin:7rem 20px;
   flex: .33 0 200px;
 }
 .core-team-container .card .facee{
@@ -440,6 +440,20 @@ nav {
   box-shadow: 0 20px 30px rgba(0,0,0,0.4);
 }
 
+.core-team-container :nth-child(15){
+  height: 200px;
+  margin:7rem 20px;
+  flex: .08 0 200px;
+}
+.core-team-container :nth-child(14){
+  height: 200px;
+  margin:7rem 20px;
+  flex: .08 0 200px;
+}.core-team-container :nth-child(13){
+  height: 200px;
+  margin:7rem 20px;
+  flex: .08 0 200px;
+}
 .members-heading{
   font-size: 20px;
   margin: 8em 10% 0;
@@ -517,6 +531,22 @@ nav {
   background: #333;
   color: #fff;
 }
+
+.container-members :nth-child(21){
+  position: relative;
+  height: 300px;
+  margin:0 20px 10rem 20px;
+  flex: 0.04 0 200px;
+  transition: all 0.5s;
+}
+.container-members :nth-child(22){
+  position: relative;
+  height: 300px;
+  margin:0 20px 10rem 20px;
+  flex: 0.04 0 200px;
+  transition: all 0.5s;
+}
+
 @media screen and (max-width: 1163px){
   .container-team .card{
     position: relative;
@@ -557,6 +587,20 @@ nav {
     height: 300px;
     /* margin:0 20px 10rem 20px; */
     flex: 0.25 0 175px;
+  }
+  .container-members :nth-child(21){
+    position: relative;
+    height: 300px;
+    margin:0 20px 10rem 20px;
+    flex: 0.04 0 200px;
+    transition: all 0.5s;
+  }
+  .container-members :nth-child(22){
+    position: relative;
+    height: 300px;
+    margin:0 20px 10rem 20px;
+    flex: 0.04 0 200px;
+    transition: all 0.5s;
   }
 
 }
@@ -610,7 +654,7 @@ nav {
     height: 200px;
     /* margin:5rem 20px; */
     margin: 70px 10px;
-    flex: .5 0 100px;
+    flex: .5 0 200px;
   }
   .container-members{
     display: flex;
@@ -622,6 +666,12 @@ nav {
     position: relative;
     height: 300px;
     margin: 70px 10px;
-    flex: .33 0 100px;
+    flex: .8 0 100px;
   }
+  .core-team-container :nth-child(15){
+    height: 200px;
+    margin:7rem 20px;
+    flex: .08 0 200px;
+  }
+
 }
