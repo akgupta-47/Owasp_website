@@ -457,7 +457,7 @@ nav {
   position: relative;
   height: 300px;
   margin:0 20px 10rem 20px;
-  flex: 0.5 0 200px;
+  flex: 0.20 0 200px;
   transition: all 0.5s;
 }
 
@@ -556,7 +556,7 @@ nav {
     position: relative;
     height: 300px;
     /* margin:0 20px 10rem 20px; */
-    flex: 0.5 0 200px;
+    flex: 0.25 0 175px;
   }
 
 }
