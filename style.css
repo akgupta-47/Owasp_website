@@ -383,7 +383,7 @@ nav {
 
 .core-team{
   font-size: 20px;
-  margin: 20em 10% 0px;
+  margin: 7em 10% 0px;
 }
 .core-team-container{
   min-width: 80%;
@@ -460,7 +460,7 @@ nav {
   display: flex;
   margin: 4em 10% 0;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap:2rem;
 }
 
 .container-members .card{
@@ -531,16 +531,31 @@ nav {
 .container-members :nth-child(21){
   position: relative;
   height: 300px;
-  margin:0 20px 10rem 20px;
-  flex: 0.04 0 200px;
+  flex: 0.01 0 200px;
   transition: all 0.5s;
 }
 .container-members :nth-child(22){
   position: relative;
   height: 300px;
-  margin:0 20px 10rem 20px;
-  flex: 0.04 0 200px;
+  flex: 0.01 0 200px;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1320px){
+  .container-members :nth-child(21){
+    position: relative;
+    height: 300px;
+    margin:0 20px 10rem 20px;
+    flex: 0.25 0 200px;
+    transition: all 0.5s;
+  }
+  .container-members :nth-child(22){
+    position: relative;
+    height: 300px;
+    margin:0 20px 10rem 20px;
+    flex: 0.07 0 200px;
+    transition: all 0.5s;
+  }
 }
 
 @media screen and (max-width: 1163px){
@@ -588,14 +603,14 @@ nav {
     position: relative;
     height: 300px;
     margin:0 20px 10rem 20px;
-    flex: 0.04 0 200px;
+    flex: 0.25 0 175px;
     transition: all 0.5s;
   }
   .container-members :nth-child(22){
     position: relative;
     height: 300px;
     margin:0 20px 10rem 20px;
-    flex: 0.04 0 200px;
+    flex: 0.07 0 175px;
     transition: all 0.5s;
   }
 
@@ -609,6 +624,17 @@ nav {
     flex: .5;
   }
 }
+
+@media screen and (max-width: 929px){
+  .container-members :nth-child(22){
+    position: relative;
+    height: 300px;
+    margin:0 20px 10rem 20px;
+    flex: 0.25 0 175px;
+    transition: all 0.5s;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .team{
     text-align: center;
